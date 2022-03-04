@@ -1,0 +1,207 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading machine</title>
+   <script src="grading.js" ></script>
+    <style>
+        .grading{
+
+
+           overflow: hidden;
+            width: 100%;
+            height: 40pc;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .background{
+            width: 45%;
+			border-radius: 50px;
+			padding: 0px 0px 0px 30px;
+            display: flex;
+            flex-direction: column;
+
+            background:
+		radial-gradient(
+			at bottom right,
+			dodgerblue 0,
+			dodgerblue 1em,
+			lightskyblue 1em,
+			lightskyblue 2em,
+			deepskyblue 2em,
+			deepskyblue 3em,
+			gainsboro 3em,
+			gainsboro 4em,
+			lightsteelblue 4em,
+			lightsteelblue 5em,
+			deepskyblue 5em,
+			deepskyblue 6em,
+			lightskyblue 6em,
+			lightskyblue 7em,
+			transparent 7em,
+			transparent 8em
+		),
+		radial-gradient(
+			at top left,
+			transparent 0,
+			transparent 1em,
+			lightskyblue 1em,
+			lightskyblue 2em,
+			deepskyblue 2em,
+			deepskyblue 3em,
+			lightsteelblue 3em,
+			lightsteelblue 4em,
+			gainsboro 4em,
+			gainsboro 5em,
+			deepskyblue 5em,
+			deepskyblue 6em,
+			skyblue 6em,
+			skyblue 7em,
+			dodgerblue 7em,
+			dodgerblue 8em,
+			transparent 8em,
+			transparent 20em
+		),
+		radial-gradient(
+			circle at center bottom,
+			coral, darkslateblue
+		);
+	
+		background-blend-mode: overlay;
+		background-size:
+		8em 8em, 8em 8em, cover;
+            margin:20px 30px;
+        }
+        div{
+            margin:20px 30px;
+        }
+        select{
+            height: 40px;
+            width: 40%;
+            outline: none;
+        }
+        input{
+            width: 40%;
+            height: 35px;
+            outline: none;
+            border-radius: 04px;
+            box-shadow: 2px 3px 0px white;
+        }
+		p{
+			margin: 30px 40px;
+		}
+		button{
+			background-color: blue;
+			height: 40px;
+			color: white;
+			border-radius: 10px;
+			width: 30%;
+		}
+        h1{
+            width: 50%;
+            align-self: center;
+        }
+        @media screen and (max-width:618px) and (min-width:20px){
+            input{
+            width: 45%;
+            height: 35px;
+            outline: none;
+            border-radius: 04px;
+            box-shadow: 2px 3px 0px white;
+        }
+        button{
+			background-color: blue;
+			height: 40px;
+			color: white;
+			border-radius: 10px;
+			width: 45%;
+		}
+        .background{
+            width: 100%;
+			border-radius: 50px;
+			padding: 0px 0px 0px 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            width: 100%;
+            align-self: center;
+        }
+        select{
+            height: 40px;
+            width: 50%;
+            outline: none;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="grading">
+       <div class="background">
+        <h1><marquee behavior="alterna" direction=""> Oluwa damilare Grading Machine</marquee></h1>
+        <div>
+            <select name="" id="">
+                <option value="" disabled >Enter your subject here</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="English Language">English Language</option>
+                <option value="Physis">Physis</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value=""></option>
+            </select>
+            <input type="text" name="" id="val1" maxlength="2">
+        </div>
+        <div>
+            <select name="" id="">
+                <option value="" disabled >Enter your subject here</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="English Language">English Language</option>
+                <option value="Physis">Physis</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value=""></option>
+            </select>
+            <input type="text" name="" id="val2" maxlength="2">
+        </div>
+        <div>
+            <select name="" id="">
+                <option value="" disabled >Enter your subject here</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="English Language">English Language</option>
+                <option value="Physis">Physis</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value=""></option>
+            </select>
+            <input type="text" name="" id="val3" maxlength="2">
+        </div>
+        <div>
+            <select name="" id="">
+                <option value="" disabled >Enter your subject here</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="English Language">English Language</option>
+                <option value="Physis">Physis</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value=""></option>
+            </select>
+            <input type="text" name="" id="val4" maxlength="2">
+        </div>
+        <p>
+            <input type="text" name="" id="result" disabled>
+            <button onclick="daruz()" >Total Score</button>
+        </p>
+        <p>
+            <input type="text" name="" id="val7" disabled>
+            
+            <button  onclick="gpaValue()" >GPA Value</button>
+        </p>
+        <p>
+            <input type="text" name="" id="seventhval" disabled>
+            <button onclick="grade()" >Grade</button>
+        </p>
+       
+       </div> 
+    </section>
+</body>
+</html>
