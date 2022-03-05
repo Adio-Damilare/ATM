@@ -3,11 +3,9 @@ function daruz(){
     var re2 = Number(val2.value)
     var re3 = Number(val3.value)
     var re4 = Number(val4.value)
-   result.value = re1 + re2 + re3 + re4
-   if(result.value>100){
-       result.value = "invalid"
-       result.style.color = "blue"
-   }
+    result.value = "invalid"
+    result.style.color = "blue"
+    result.value = re1 + re2 + re3 + re4
 }
 function gpaValue(){
     if (result.value>100){
